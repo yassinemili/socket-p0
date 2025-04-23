@@ -9,7 +9,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: ["https://elec-frontend.vercel.app"], // allow Vercel frontend
+        origin: ["https://elec-frontend.vercel.app", "https://elec-backend.vercel.app/"], // allow Vercel frontend
         methods: ["GET", "POST"],
         credentials: true
     }
