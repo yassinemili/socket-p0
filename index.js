@@ -1,4 +1,3 @@
-// index.js
 const express = require("express");
 const http = require("http");
 const cors = require("cors");
@@ -9,7 +8,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: ["https://elec-frontend.vercel.app", "https://elec-backend.vercel.app/"], // allow Vercel frontend
+        origin: ["https://elec-frontend.vercel.app", "https://elec-backend.vercel.app"],
         methods: ["GET", "POST"],
         credentials: true
     }
